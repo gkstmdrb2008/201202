@@ -1,0 +1,43 @@
+.st0 {
+   
+  stroke-dasharray: 15 15;
+  stroke-dashoffset: 15;
+  opacity: 0;
+
+  animation-name: draw;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+        opacity: 0.46;
+    }
+}
+
+.st4, .st1{
+    position: fixed;
+    filter: blur(0px);
+
+    animation-name: t;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes t {
+    to{
+        opacity: 0;
+        filter: blur(300px);
+    }
+}
+
+.gt {
+    position: absolute;
+    left: 10px;
+}
